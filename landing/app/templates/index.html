@@ -1,0 +1,152 @@
+<!-- <html>
+  <body>
+    <h1>Arithmetic Microservices</h1>
+    <form action="" method="POST">
+      
+      Enter the First number : <input name="first" value="0" />
+      <br />
+      Enter the Second number: <input name="second" value="0" />
+      <br />
+      Enter Operation:
+      <select id="op" name="operation">
+        <option value="add">Addition</option>
+        <option value="minus">Subtraction</option>
+        <option value="multiply">Multiplication</option>
+        <option value="divide">Division</option>
+        <option value="exponent">Exponent</option>
+        <option value="equals">Equals</option>
+        <option value="modulus">Modulus</option>
+      </select>
+      <br /><br />
+      <input type="submit" name="submit_button" />
+    </form>
+    {% for message in get_flashed_messages() %} {{message}} {% endfor %}
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Arithmetic Microservices</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #9dc08b;
+        background-image: url("3.png");
+        background-repeat: 2;
+      }
+      .title1 {
+        /* width: 400px;
+        align-content: center;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        font-family: monospace;
+
+        border: 0px solid black;
+        background-color: #064635; */
+
+        width: 400px;
+        height: 33px;
+        margin: 0 auto;
+        background-color: #557c55;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        border-radius: 5px;
+        margin-top: 20px;
+
+        font-size: xx-large;
+        font-family: monospace;
+      }
+      h1 {
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        font-family: monospace;
+        font-size: 50;
+      }
+      form {
+        width: 400px;
+        margin: 0 auto;
+        background-color: #edf1d6;
+        padding: 30px;
+        box-shadow: 0px 0px 10px #888;
+
+        border-radius: 5px;
+      }
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+      input[type="number"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        font-size: 16px;
+      }
+      select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        font-size: 16px;
+      }
+      input[type="submit"] {
+        background-color: #609966;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      input[type="submit"]:hover {
+        background-color: #609966;
+      }
+      .flash-message {
+        width: 400px;
+        margin: 0 auto;
+        background-color: #557c55;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        border-radius: 5px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="title1">Arithmetic Microservices</div>
+    <h1></h1>
+    <form action="" method="POST">
+      <label for="first">First number:</label>
+      <input type="number" id="first" name="first" value="0" step="any" />
+      <label for="second">Second number:</label>
+      <input type="number" id="second" name="second" value="0" step="any" />
+      <label for="operation">Operation:</label>
+      <select id="operation" name="operation">
+        <option value="add">Addition</option>
+        <option value="minus">Subtraction</option>
+        <option value="multiply">Multiplication</option>
+        <option value="divide">Division</option>
+        <option value="exponent">Exponent</option>
+        <option value="equals">Equals</option>
+        <option value="modulus">Modulus</option>
+      </select>
+      <br />
+      <input type="submit" name="submit_button" value="Calculate" />
+    </form>
+    {% for message in get_flashed_messages() %}
+    <div class="flash-message">{{ message }}</div>
+    {% endfor %}
+  </body>
+</html>
