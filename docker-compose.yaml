@@ -1,0 +1,70 @@
+version: "3.3"
+services:
+  landing-service:
+    build: ./landing
+    hostname: landing-service
+    ports:
+      - "5050:5050"
+    networks:
+      - my-network
+    depends_on:
+      - add-service
+      - minus-service
+      - multiply-service
+      - divide-service
+      - exponent-service
+      - equals-service
+      - modulus-service
+
+  add-service:
+    build: ./add
+    hostname: add-service
+    ports:
+      - "5001:5050"
+    networks:
+      - my-network
+
+  minus-service:
+    build: ./minus
+    ports:
+      - "5002:5050"
+    networks:
+      - my-network
+
+  multiply-service:
+    build: ./multiply
+    ports:
+      - "5003:5050"
+    networks:
+      - my-network
+
+  divide-service:
+    build: ./divide
+    ports:
+      - "5011:5050"
+    networks:
+      - my-network
+
+  exponent-service:
+    build: ./exponent
+    ports:
+      - "5012:5050"
+    networks:
+      - my-network
+
+  equals-service:
+    build: ./equals
+    ports:
+      - "5013:5050"
+    networks:
+      - my-network
+
+  modulus-service:
+    build: ./modulus
+    ports:
+      - "5014:5050"
+    networks:
+      - my-network
+
+networks:
+  my-network:
