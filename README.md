@@ -18,8 +18,20 @@ Apart from the four basic arithmetic services (addition, substraction , multipli
 The directory structure of every microservice:
 
 ├── <name of the service>
-│   ├── Dockerfile           # same as landing/Dockerfile
+  
+│   ├── Dockerfile          
+  
 │   ├── app
-│   │   ├── app.py           # TODO: by yourself
+  
+│   │   ├── app.py          \
+  
 │   │   └── requirements.txt # same as landing/app/requirements.txt
+  
 │   │  
+  
+  
+  
+The landing page has been beautified :
+  
+  ![image](https://user-images.githubusercontent.com/105477488/233857752-de324561-6c58-4692-a160-d6149c5d4aa8.png)
+
