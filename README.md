@@ -33,5 +33,6 @@ The directory structure of every microservice:
   
 The landing page has been beautified :
   
-  ![image](https://user-images.githubusercontent.com/105477488/233857752-de324561-6c58-4692-a160-d6149c5d4aa8.png)
+  ![image](https://user-images.githubusercontent.com/105477488/233857893-5e0b8426-9cbf-4bb3-8781-599d70688810.png)
+
 
